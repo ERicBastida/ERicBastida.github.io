@@ -4,7 +4,7 @@ CV interactivo y estático, hecho con Vite, React y [Motion](https://motion.dev)
 
 ## Editar los datos
 
-Todo el contenido está en [`src/data/cv.json`](src/data/cv.json): color de acento (`accent`), datos personales, idiomas, experiencia, proyectos y estudios.
+Todo el contenido está en [`src/data/cv.json`](src/data/cv.json): color de acento (`accent` para rellenos y `accentText`, más claro, para textos y líneas), datos personales, idiomas, experiencia, proyectos y estudios.
 Los textos traducibles llevan `es` y `en`. En `endDate`, `"current"` significa que el trabajo sigue vigente.
 Los años de experiencia, los períodos y el stack se calculan solos a partir de ese archivo.
 

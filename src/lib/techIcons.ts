@@ -46,7 +46,7 @@ interface TechIcon {
 // Colores de cada marca, aclarados donde no se leían sobre el panel oscuro
 const ICONS: Record<string, TechIcon> = {
   '.NET': { icon: SiDotnet, color: '#9b7bf0' },
-  AI: { icon: TbSparkles, color: '#74acdf' },
+  AI: { icon: TbSparkles, color: '#8f9bf0' },
   AWS: { icon: FaAws, color: '#ff9900' },
   Angular: { icon: SiAngular, color: '#ee4266' },
   'C#': { icon: SiSharp, color: '#c07fbb' },

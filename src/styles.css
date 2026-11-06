@@ -1,12 +1,13 @@
 :root {
-  --accent: #74acdf;
+  --accent: #3946bf;
+  --accent-text: #8f9bf0;
   --black: #000000;
   --panel: #1c1e20;
   --panel-raised: #26292c;
   --line: #3a3e42;
   --text: #f4f3f0;
   --muted: #a4a6aa;
-  --on-accent: #0c0d0e;
+  --on-accent: #ffffff;
   --display: 'Bricolage Grotesque Variable', system-ui, sans-serif;
   --body: 'Instrument Sans Variable', system-ui, sans-serif;
   --card-height: min(780px, 88vh);
@@ -65,7 +66,7 @@ a {
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--accent-text);
   outline-offset: 3px;
 }
 
@@ -114,7 +115,7 @@ a {
   font-size: 1.6rem;
   font-weight: 800;
   letter-spacing: -0.03em;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .rail-nav {
@@ -233,7 +234,7 @@ a {
 }
 
 .portrait-shade {
-  background: linear-gradient(to top, #000 18%, rgb(0 0 0 / 0.75) 34%, transparent 58%);
+  background: linear-gradient(to top, #000 10%, rgb(0 0 0 / 0.7) 25%, transparent 46%);
   pointer-events: none;
 }
 
@@ -296,7 +297,7 @@ a {
 }
 
 .portrait-links a:hover {
-  color: var(--accent);
+  color: var(--accent-text);
   translate: 0 -2px;
 }
 
@@ -329,7 +330,7 @@ a {
   flex-wrap: wrap;
   gap: 2px 0;
   margin-top: 16px;
-  color: var(--accent);
+  color: var(--accent-text);
   font-style: italic;
 }
 
@@ -493,7 +494,7 @@ a {
   height: 44px;
   background: var(--panel-raised);
   border-radius: 8px;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .project-name {
@@ -544,7 +545,7 @@ a {
 }
 
 .years-label {
-  color: var(--accent);
+  color: var(--accent-text);
   font-size: 1.0625rem;
   font-weight: 500;
 }
@@ -609,7 +610,7 @@ a {
   align-items: center;
   gap: 6px;
   min-height: 32px;
-  color: var(--accent);
+  color: var(--accent-text);
   font-size: 0.9375rem;
   font-weight: 500;
 }
@@ -688,7 +689,7 @@ a {
 }
 
 .job-period {
-  color: var(--accent);
+  color: var(--accent-text);
   font-size: 0.875rem;
   white-space: nowrap;
 }
@@ -711,7 +712,7 @@ a {
   top: 0;
   bottom: 0;
   min-width: 6px;
-  background: var(--accent);
+  background: var(--accent-text);
 }
 
 .job-body {
@@ -801,7 +802,7 @@ a {
 }
 
 .study-period {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .study-detail-title {
@@ -846,7 +847,7 @@ a {
   left: 50%;
   top: 50%;
   margin: -30px 0 0 -15px;
-  color: var(--accent);
+  color: var(--accent-text);
   transform-origin: bottom center;
 }
 
@@ -888,7 +889,7 @@ a {
 }
 
 .contact-email:hover {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .copy-label {
@@ -941,7 +942,7 @@ a {
   border: 0;
   border-bottom: 2px solid var(--line);
   border-radius: 0;
-  color: var(--accent);
+  color: var(--accent-text);
   transition: border-color 0.2s;
 }
 
@@ -952,7 +953,7 @@ a {
 
 .blank input:hover,
 .blank input:focus {
-  border-bottom-color: var(--accent);
+  border-bottom-color: var(--accent-text);
 }
 
 .blank input:focus {

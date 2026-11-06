@@ -7,6 +7,7 @@ import App from './App'
 import { cv } from './lib/cv'
 
 document.documentElement.style.setProperty('--accent', cv.accent)
+document.documentElement.style.setProperty('--accent-text', cv.accentText)
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

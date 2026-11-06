@@ -37,6 +37,7 @@ export interface Study {
 
 interface Cv {
   accent: string
+  accentText: string
   personal: {
     fullName: string
     role: Localized
