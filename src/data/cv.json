@@ -1,0 +1,536 @@
+{
+  "accent": "#74acdf",
+  "personal": {
+    "fullName": "Eric Bastida",
+    "role": {
+      "es": "Ingeniero de Software",
+      "en": "Software Engineer"
+    },
+    "location": "Federación, Entre Ríos, Argentina",
+    "email": "eribastida@gmail.com",
+    "github": "https://github.com/ericbastida",
+    "linkedin": "https://www.linkedin.com/in/ericbastida",
+    "photo": "person.jpg",
+    "map": "buenos-aires.jpg",
+    "contactMap": "federacion.jpg",
+    "biography": {
+      "es": "Ingeniero en Informática por la Universidad Nacional del Litoral, con cerca de 9 años de experiencia en desarrollo de software backend, frontend y mobile. He trabajado en consultoría, retail, e-commerce y servicios financieros, participando en todo el ciclo de vida del producto, desde el análisis hasta el despliegue en producción. Soy curioso y proactivo: me adapto a los recursos y a las herramientas de cada empresa para lograr el mejor resultado, e incorporo nuevas soluciones, como la inteligencia artificial, cuando aportan valor real al producto, siempre con criterio técnico.",
+      "en": "Computer Engineer from Universidad Nacional del Litoral with nearly 9 years of experience in backend, frontend and mobile software development. I have worked across consulting, retail, e-commerce and financial services, taking part in the full product lifecycle, from analysis to production deployment. I am curious and proactive: I adapt to each company's resources and tools to achieve the best result, and I bring in new solutions, such as artificial intelligence, when they add real value to the product, always with sound technical judgment."
+    },
+    "lookingFor": {
+      "es": "Busco un equipo donde pueda crecer hacia la arquitectura de software, con desafíos reales de escalabilidad y concurrencia. Me interesa entender los sistemas en detalle: escalado horizontal, procesamiento asíncrono con colas y eventos, condiciones de carrera, idempotencia, estrategias de caché y observabilidad. También disfruto evaluar e implementar tecnologías emergentes y llevarlas a producción cuando resuelven un problema concreto.",
+      "en": "I am looking for a team where I can grow toward software architecture, with real scalability and concurrency challenges. I like understanding systems in detail: horizontal scaling, asynchronous processing with queues and events, race conditions, idempotency, caching strategies and observability. I also enjoy evaluating and implementing emerging technologies and taking them to production when they solve a concrete problem."
+    },
+    "languages": [
+      {
+        "name": {
+          "es": "Español",
+          "en": "Spanish"
+        },
+        "level": {
+          "es": "Nativo",
+          "en": "Native"
+        }
+      },
+      {
+        "name": {
+          "es": "Inglés",
+          "en": "English"
+        },
+        "level": {
+          "es": "Lectura avanzada, escritura intermedia-alta y conversación intermedia",
+          "en": "Advanced reading, upper-intermediate writing and intermediate conversation"
+        }
+      }
+    ]
+  },
+  "experiences": [
+    {
+      "id": "itti",
+      "company": "ITTI",
+      "logo": "logos/itti_logo.png",
+      "position": {
+        "es": "Sr. Software Engineer",
+        "en": "Senior Software Engineer"
+      },
+      "startDate": "2026-10-13",
+      "endDate": "2026-11-04",
+      "industry": {
+        "es": "Casa de bolsa y fondos",
+        "en": "Brokerage and investment funds"
+      },
+      "description": {
+        "es": "Gestión y desarrollo de la app mobile y de los servicios backend que soportan el flujo de inversión en los activos financieros de la compañía, incluidos los fondos mutuos. Desarrollo de los sitios web en React orientados al flujo de empresas. Integración de herramientas de inteligencia artificial en el proceso de desarrollo para elevar la calidad y la confiabilidad de cada entrega desde la primera iteración.",
+        "en": "Managed and developed the mobile app and the backend services supporting the investment flow across the company's financial assets, including mutual funds. Built the React websites for the corporate client flow. Integrated artificial intelligence tools into the development process to raise the quality and reliability of each delivery from the first iteration."
+      },
+      "technologies": [
+        "Flutter",
+        "JavaScript",
+        "AI",
+        "React",
+        "Go",
+        "MySQL"
+      ]
+    },
+    {
+      "id": "astroselling",
+      "company": "Astroselling",
+      "logo": "logos/astroselling_logo.jpeg",
+      "position": {
+        "es": "Ingeniero de software",
+        "en": "Software Engineer"
+      },
+      "startDate": "2023-12-01",
+      "endDate": "2026-10-12",
+      "industry": {
+        "es": "Start-up",
+        "en": "Start-up"
+      },
+      "companySize": "11-50",
+      "description": {
+        "es": "Desarrollo de software en una start-up que sincroniza productos entre múltiples canales de venta para ayudar a escalar negocios online. Participación de punta a punta: atención a usuarios, análisis de problemas, desarrollo de nuevas funcionalidades y despliegue en producción. Propuesta de mejoras y optimización de procesos, alineando cada entrega técnica con las necesidades del cliente y del negocio.",
+        "en": "Software development at a start-up that syncs products across multiple sales channels to help online businesses scale. End-to-end involvement: user support, problem analysis, development of new features and production deployment. Proposed improvements and optimized processes, aligning each technical delivery with customer and business needs."
+      },
+      "technologies": [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "Vue.js",
+        "AWS",
+        "Git"
+      ]
+    },
+    {
+      "id": "mercado-libre",
+      "company": "Mercado Libre",
+      "logo": "logos/mercadolibre_logo.jpeg",
+      "position": {
+        "es": "SSr. Software Engineer",
+        "en": "Semi-Senior Software Engineer"
+      },
+      "startDate": "2022-01-01",
+      "endDate": "2024-11-30",
+      "industry": {
+        "es": "E-commerce, retail (1P)",
+        "en": "E-commerce, retail (1P)"
+      },
+      "description": {
+        "es": "Reducción del 40 % de los errores en producción de la plataforma interna de gestión de impuestos del negocio de retail (1P), mediante buenas prácticas de diseño de software y una mejor arquitectura de la lógica de negocio, lo que facilitó escalar el sistema y rastrear fallos. Desarrollo del motor de reglas que determina el impuesto aplicable en distintos países según el tipo de producto y el lugar de residencia, sobre una arquitectura de microservicios. Relevamiento de requerimientos con usuarios internos, definición de las soluciones y coordinación de integraciones con otros equipos.",
+        "en": "Reduced production errors by 40% on the internal tax management platform for the retail (1P) business by applying sound software design practices and a stronger business logic architecture, which made the system easier to scale and failures easier to trace. Developed the rules engine that determines the applicable tax across countries based on product type and place of residence, on a microservices architecture. Gathered requirements from internal users, defined solutions and coordinated integrations with other teams."
+      },
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "TypeScript",
+        "JavaScript",
+        "jQuery",
+        "Git",
+        "React",
+        "GraphQL",
+        "Node.js"
+      ]
+    },
+    {
+      "id": "bitwise",
+      "company": "Bitwise SA",
+      "logo": "logos/bitwise_sa_logo.jpeg",
+      "position": {
+        "es": "Desarrollador Full Stack",
+        "en": "Full Stack Developer"
+      },
+      "startDate": "2021-01-01",
+      "endDate": "2022-12-31",
+      "description": {
+        "es": "Desarrollo .NET en una consultora que presta servicios a Sancor Seguros. Entrega de funcionalidades bajo metodología Scrum, en coordinación constante con equipos de analistas y testers.",
+        "en": ".NET development at a consultancy serving Sancor Seguros. Delivered features under Scrum, working in constant coordination with analyst and tester teams."
+      },
+      "technologies": [
+        ".NET",
+        "C#",
+        "Vue.js",
+        "SQL",
+        "HTML",
+        "CSS",
+        "TypeScript",
+        "JavaScript",
+        "jQuery",
+        "TFS",
+        "Git",
+        "Web APIs"
+      ]
+    },
+    {
+      "id": "musimundo",
+      "company": "Musimundo!",
+      "logo": "logos/musimundo_logo.jpeg",
+      "position": {
+        "es": "Analista desarrollador de software",
+        "en": "Software Developer Analyst"
+      },
+      "startDate": "2020-01-01",
+      "endDate": "2021-01-01",
+      "description": {
+        "es": "Participación en el proceso completo de desarrollo de software con metodologías ágiles, desde el relevamiento de requerimientos con el cliente hasta la entrega y el mantenimiento.",
+        "en": "Took part in the complete software development process using agile methodologies, from gathering requirements with the client to delivery and maintenance."
+      },
+      "technologies": [
+        "C#",
+        "Angular",
+        "JCL",
+        "HTML",
+        "CSS",
+        "TypeScript",
+        "JavaScript",
+        "jQuery",
+        "Razor",
+        "TFS",
+        "Web APIs"
+      ]
+    },
+    {
+      "id": "bombieri",
+      "company": "Bombieri",
+      "logo": "logos/bombieri_logo.jpeg",
+      "position": {
+        "es": "Desarrollador Full Stack",
+        "en": "Full Stack Developer"
+      },
+      "startDate": "2019-01-01",
+      "endDate": "2020-01-01",
+      "description": {
+        "es": "Primera experiencia en desarrollo de software empresarial. Desarrollo de proyectos web en modalidad de outsourcing, como parte de un equipo de desarrolladores.",
+        "en": "First experience in enterprise software development. Built web projects on an outsourcing basis as part of a development team."
+      },
+      "technologies": [
+        "Web APIs",
+        "Web Pages",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "freelance",
+      "company": "Freelance",
+      "logo": "logos/dev_logo.png",
+      "position": {
+        "es": "Desarrollador Full Stack",
+        "en": "Full Stack Developer"
+      },
+      "startDate": "2018-01-01",
+      "endDate": "2019-01-01",
+      "description": {
+        "es": "Desarrollo de proyectos propios y a pedido de empresas. Incorporación a proyectos en curso para implementar mejoras y agilizar sus entregas.",
+        "en": "Developed my own projects and projects commissioned by companies. Joined ongoing projects to implement improvements and speed up delivery."
+      },
+      "technologies": [
+        "C++",
+        "C#",
+        "Java",
+        "SQL",
+        "SQLite",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "React Native",
+        "Django",
+        "Firebase",
+        "Python",
+        "Git",
+        "SVN",
+        "TFS"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "dojo-ia",
+      "name": "Dojo-IA",
+      "logo": "logos/dojo_logo.png",
+      "description": {
+        "es": "App de entrenamiento instalable en el celular que sincroniza actividades de Garmin y Strava, y analiza la carga de cada atleta. Utiliza agentes de IA especializados en running, gimnasio y nutrición para dar recomendaciones personalizadas y optimizar el entrenamiento.",
+        "en": "Installable training app that syncs Garmin and Strava activities and analyzes each athlete's training load. It uses AI agents specialized in running, gym training and nutrition to give personalized recommendations and optimize training."
+      },
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Firebase",
+        "Claude API",
+        "MCP",
+        "Fly.io"
+      ],
+      "links": [
+        {
+          "type": "site",
+          "url": "https://dojo-ia.site/"
+        }
+      ]
+    },
+    {
+      "id": "candela-mirabete",
+      "name": "Web de Candela Mirabete",
+      "logo": "logos/candela_logo.png",
+      "description": {
+        "es": "Sitio profesional de una licenciada en Nutrición de Federación, Entre Ríos. Desarrollo a medida con animaciones, exportación estática, publicación automática y medición de los contactos por WhatsApp e Instagram.",
+        "en": "Professional website for a nutritionist from Federación, Entre Ríos. Custom development with animations, static export, automated deployment and tracking of WhatsApp and Instagram contacts."
+      },
+      "technologies": [
+        "Next.js",
+        "React",
+        "Motion",
+        "Google Analytics",
+        "GitHub Actions"
+      ],
+      "links": [
+        {
+          "type": "site",
+          "url": "https://candelamirabete.com"
+        },
+        {
+          "type": "code",
+          "url": "https://github.com/ERicBastida/web-cande"
+        }
+      ]
+    },
+    {
+      "id": "turnos-vacunacion",
+      "name": "Turnos de vacunación, Hospital San José",
+      "logo": "",
+      "description": {
+        "es": "Aplicación web para gestionar los turnos de vacunación contra el COVID-19 del Hospital San José, en Federación, Entre Ríos. Se desarrolló durante la pandemia para evitar aglomeraciones: cada persona cargaba sus datos, recibía su turno y podía obtener el comprobante en PDF.",
+        "en": "Web application to manage COVID-19 vaccination appointments for Hospital San José in Federación, Entre Ríos. It was built during the pandemic to avoid crowding: each person entered their details, received an appointment and could get a PDF confirmation."
+      },
+      "technologies": [
+        "React",
+        "Firebase",
+        "Bootstrap",
+        "JavaScript"
+      ],
+      "links": [
+        {
+          "type": "code",
+          "url": "https://github.com/ERicBastida/HSJturnos"
+        }
+      ]
+    },
+    {
+      "id": "becopter",
+      "name": "BEcopter",
+      "logo": "",
+      "description": {
+        "es": "Proyecto final de Ingeniería en Informática: plataforma para el guiado y la navegación de un vehículo aéreo no tripulado. Incluye una aplicación de escritorio en Python para comunicarse con un cuadricóptero y gestionar su vuelo, con una Raspberry Pi 3 a bordo.",
+        "en": "Final project for my Computer Engineering degree: a platform for guiding and navigating an unmanned aerial vehicle. It includes a Python desktop application to communicate with a quadcopter and manage its flight, with a Raspberry Pi 3 on board."
+      },
+      "technologies": [
+        "Python",
+        "PyQt",
+        "Raspberry Pi",
+        "Arduino",
+        "UNIX",
+        "Drones"
+      ],
+      "links": [
+        {
+          "type": "code",
+          "url": "https://github.com/ERicBastida/BEcopter"
+        }
+      ]
+    },
+    {
+      "id": "autito-bluetooth",
+      "name": "Autito Bluetooth",
+      "logo": "",
+      "description": {
+        "es": "Auto a control remoto construido sobre una placa Arduino UNO y manejado por Bluetooth desde una aplicación Android propia.",
+        "en": "Remote-controlled car built on an Arduino UNO board and driven over Bluetooth from my own Android application."
+      },
+      "technologies": [
+        "Java",
+        "SQLite",
+        "C++",
+        "Android Studio",
+        "Arduino"
+      ],
+      "links": [
+        {
+          "type": "video",
+          "url": "https://youtu.be/5AODRGsfIk8"
+        }
+      ]
+    }
+  ],
+  "studies": [
+    {
+      "id": "computer-engineering",
+      "title": {
+        "en": "Computer Engineering",
+        "es": "Ingeniero en Informática"
+      },
+      "institution": {
+        "en": "Universidad Nacional del Litoral, Santa Fe - Argentina",
+        "es": "Universidad Nacional del Litoral, Santa Fe - Argentina"
+      },
+      "period": "2010 - 2018",
+      "image": "logos/UNL_logo.png",
+      "description": {
+        "es": "Carrera orientada a la ciencia de datos.",
+        "en": "Degree oriented to data science."
+      },
+      "details": {
+        "en": "Main subjects: Algorithms, Databases, Software Engineering, Networks, Operating Systems, OOP.",
+        "es": "Materias principales: Algoritmos, Bases de Datos, Ingeniería de Software, Redes, Sistemas Operativos, POO."
+      }
+    },
+    {
+      "id": "university-bachelor-in-engineering",
+      "title": {
+        "en": "University Bachelor in Engineering",
+        "es": "Bachiller Universitario en Ingeniería"
+      },
+      "institution": {
+        "en": "Universidad Nacional del Litoral, Santa Fe - Argentina",
+        "es": "Universidad Nacional del Litoral, Santa Fe - Argentina"
+      },
+      "period": "2010 - 2015",
+      "image": "logos/UNL_logo.png",
+      "description": {
+        "es": "Título intermedio de la carrera de ingeniería en informática.",
+        "en": "Intermediate title in the Computer Engineering career."
+      },
+      "details": {
+        "en": "General engineering subjects, mathematics, physics, programming.",
+        "es": "Materias generales de ingeniería, matemáticas, física, programación."
+      }
+    },
+    {
+      "id": "economy-and-management-of-organizations",
+      "title": {
+        "en": "Economy and Management of Organizations",
+        "es": "Economía y Gestión de las Organizaciones"
+      },
+      "institution": {
+        "en": "E.E.M. N°4 Domingo Faustino Sarmiento, Federación, Entre Ríos - Argentina",
+        "es": "E.E.M. N°4 Domingo Faustino Sarmiento, Federación, Entre Ríos - Argentina"
+      },
+      "period": "2003 - 2008",
+      "image": "logos/arg_logo.svg",
+      "description": {
+        "es": "Secundario completo.",
+        "en": "Secondary education completed."
+      },
+      "details": {
+        "en": "Economics, management, accounting, administration.",
+        "es": "Economía, gestión, contabilidad, administración."
+      }
+    },
+    {
+      "id": "introduction-to-python-and-django",
+      "title": {
+        "en": "Introduction to Python and Django",
+        "es": "Introducción a Python y Django"
+      },
+      "institution": {
+        "en": "Universidad Tecnológica Nacional (UTN) - San Francisco",
+        "es": "Universidad Tecnológica Nacional (UTN) - San Francisco"
+      },
+      "period": "2021",
+      "image": "logos/UTN_logo.jpg",
+      "description": {
+        "es": "Curso a distancia.",
+        "en": "Distance course."
+      },
+      "details": {
+        "en": "Python basics, Django framework, web development.",
+        "es": "Python básico, framework Django, desarrollo web."
+      }
+    },
+    {
+      "id": "expert-in-computer-forensics",
+      "title": {
+        "en": "Expert in Computer Forensics",
+        "es": "Perito en Informática Forense"
+      },
+      "institution": {
+        "en": "Latin American Council for Cybersecurity and Computer Forensic (IACCFC)",
+        "es": "Latin American Council for Cybersecurity and Computer Forensic (IACCFC)"
+      },
+      "period": "2020",
+      "image": "logos/HACKING_logo.png",
+      "description": {
+        "es": "Certificado otorgado por IACCFC.",
+        "en": "Certificate granted by IACCFC."
+      },
+      "details": {
+        "en": "Computer forensics, cybersecurity, digital evidence.",
+        "es": "Informática forense, ciberseguridad, evidencia digital."
+      }
+    },
+    {
+      "id": "pc-assembly-and-repair-technician",
+      "title": {
+        "en": "PC Assembly and Repair Technician",
+        "es": "Técnico en Armado y Reparación de PC"
+      },
+      "institution": {
+        "en": "Instituto Argentino de Computación (IAC)",
+        "es": "Instituto Argentino de Computación (IAC)"
+      },
+      "period": "2007",
+      "image": "logos/IAC_loco.png",
+      "description": {
+        "es": "Optimización de recursos, seguridad, cámaras, etc.",
+        "en": "Resource optimization, security techniques, camera installation, etc."
+      },
+      "details": {
+        "en": "PC hardware, troubleshooting, security, peripherals.",
+        "es": "Hardware de PC, resolución de problemas, seguridad, periféricos."
+      }
+    },
+    {
+      "id": "english",
+      "title": {
+        "en": "English",
+        "es": "Inglés"
+      },
+      "institution": {
+        "en": "English Academy, Federación, Entre Ríos",
+        "es": "English Academy, Federación, Entre Ríos"
+      },
+      "period": "2005 - 2007",
+      "image": "logos/ENGLISH_logo.png",
+      "description": {
+        "es": "Cumplidos dos años de curso completo.",
+        "en": "Completed two years of full course."
+      },
+      "details": {
+        "en": "English language, grammar, conversation.",
+        "es": "Idioma inglés, gramática, conversación."
+      }
+    },
+    {
+      "id": "mobile-device-programming",
+      "title": {
+        "en": "Mobile Device Programming",
+        "es": "Programación de Dispositivos Móviles"
+      },
+      "institution": {
+        "en": "Universidad Nacional del Litoral, Santa Fe - Argentina",
+        "es": "Universidad Nacional del Litoral, Santa Fe - Argentina"
+      },
+      "period": "2017",
+      "image": "logos/UNL_logo.png",
+      "description": {
+        "es": "Materia optativa para desarrollo de apps móviles con Android Studio.",
+        "en": "Elective subject for mobile app development with Android Studio."
+      },
+      "details": {
+        "en": "Android Studio, mobile app development, Java.",
+        "es": "Android Studio, desarrollo de apps móviles, Java."
+      }
+    }
+  ]
+}
