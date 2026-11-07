@@ -11,6 +11,8 @@ Los años de experiencia, los períodos y el stack se calculan solos a partir de
 Las imágenes van en `public/` y se referencian con una ruta relativa, por ejemplo `logos/UNL_logo.png`.
 El mapa de Contacto (`federacion.jpg`) está generado con datos de © OpenStreetMap.
 
+El fondo corre un Dijkstra bidireccional sobre `roads.bin`, el grafo de calles sacado de `buenos-aires.jpg` con `scripts/build-roads.py`. Si cambiás esa imagen, volvé a generarlo.
+
 ## Desarrollo
 
 ```bash

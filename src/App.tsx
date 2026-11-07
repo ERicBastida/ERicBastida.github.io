@@ -3,6 +3,7 @@ import { AnimatePresence, MotionConfig, motion, useMotionValue, useSpring } from
 import { asset, cv, type Lang } from './lib/cv'
 import { Rail, SECTIONS, type SectionId } from './components/Rail'
 import { Portrait } from './components/Portrait'
+import { RouteSearch } from './components/RouteSearch'
 import { About } from './sections/About'
 import { ExperienceSection } from './sections/Experience'
 import { Projects } from './sections/Projects'
@@ -103,7 +104,9 @@ export default function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.4 }}
-        />
+        >
+          <RouteSearch />
+        </motion.div>
 
         <div className="card">
           <Rail active={section} onSelect={goTo} lang={lang} onLang={setLang} />
