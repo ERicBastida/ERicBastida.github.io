@@ -1,7 +1,7 @@
 import { useEffect, useState, type FormEvent } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
-import { Check, Copy, Mail, MapPin } from 'lucide-react'
-import { asset, cv, type Lang } from '../lib/cv'
+import { Check, Copy, FileDown, Mail, MapPin } from 'lucide-react'
+import { asset, cv, resumePdf, type Lang } from '../lib/cv'
 import { t, type RecruiterField } from '../lib/i18n'
 
 const { personal } = cv
@@ -126,6 +126,10 @@ export function Contact({ lang }: { lang: Lang }) {
             onClick={() => copyText(personal.email, 'email')}
           />
         </div>
+        <a className="link-button" href={resumePdf(lang)} download>
+          <FileDown size={16} aria-hidden="true" />
+          {copy.downloadCv}
+        </a>
 
         <div
           className="contact-map"

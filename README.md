@@ -20,6 +20,10 @@ npm install
 npm run dev
 ```
 
+## CV en PDF
+
+`npm run pdf` genera `public/cv-eric-bastida-es.pdf` y `public/cv-eric-bastida-en.pdf` desde `pdf.html`, con los mismos datos de `cv.json`. Usa Google Chrome; si está en otra ruta, indicala con `CHROME_PATH`.
+
 ## Publicación
 
 Cada push a `main` publica el sitio con GitHub Actions. En el repo, activá **Settings > Pages > Source: GitHub Actions**.

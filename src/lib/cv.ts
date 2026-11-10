@@ -61,3 +61,6 @@ export const cv = rawCv as Cv
 
 // Las rutas del JSON son relativas a public/
 export const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`
+
+// Los genera npm run pdf
+export const resumePdf = (lang: Lang) => asset(`cv-eric-bastida-${lang}.pdf`)

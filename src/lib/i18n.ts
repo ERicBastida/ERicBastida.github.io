@@ -40,6 +40,7 @@ const strings = {
     copyMessage: 'Copiar mensaje',
     copied: 'Copiado',
     openMail: 'Enviar correo',
+    downloadCv: 'Descargar CV en PDF',
     mailSubject: (role: string, company: string) => `Búsqueda de ${role} en ${company}`,
     recruiterMessage: [
       { text: 'Hola Eric! Soy ' },
@@ -89,6 +90,7 @@ const strings = {
     copyMessage: 'Copy message',
     copied: 'Copied',
     openMail: 'Send email',
+    downloadCv: 'Download CV as PDF',
     mailSubject: (role: string, company: string) => `${role} opening at ${company}`,
     recruiterMessage: [
       { text: 'Hi Eric! I am ' },
