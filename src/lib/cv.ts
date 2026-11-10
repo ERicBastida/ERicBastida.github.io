@@ -1,4 +1,5 @@
 import rawCv from '../data/cv.json'
+import type { FlagCode } from '../components/Flag'
 
 export type Lang = 'es' | 'en'
 export type Localized = Record<Lang, string>
@@ -13,6 +14,8 @@ export interface Experience {
   industry?: Localized
   companySize?: string
   description: Localized
+  // Versión corta para el PDF
+  summary: Localized
   technologies: string[]
 }
 
@@ -21,6 +24,7 @@ export interface Project {
   name: string
   logo: string
   description: Localized
+  summary: Localized
   technologies: string[]
   links: { type: 'site' | 'code' | 'video'; url: string }[]
 }
@@ -30,6 +34,8 @@ export interface Study {
   title: Localized
   institution: Localized
   period: string
+  // El PDF muestra solo la formación marcada, para no pasar de dos páginas
+  showInPdf: boolean
   image: string
   description: Localized
   details: Localized
@@ -50,7 +56,14 @@ interface Cv {
     contactMap: string
     biography: Localized
     lookingFor: Localized
-    languages: { name: Localized; level: Localized }[]
+    website: string
+    // Un idioma nativo lleva level; uno aprendido, skills con value de 0 a 100 para las barras
+    languages: {
+      name: Localized
+      flag: FlagCode
+      level?: Localized
+      skills?: { name: Localized; level: Localized; value: number }[]
+    }[]
   }
   experiences: Experience[]
   projects: Project[]

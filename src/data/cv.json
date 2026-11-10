@@ -11,6 +11,7 @@
     "email": "eribastida@gmail.com",
     "github": "https://github.com/ericbastida",
     "linkedin": "https://www.linkedin.com/in/ericbastida",
+    "website": "https://ericbastida.github.io/",
     "photo": "person.jpg",
     "map": "buenos-aires.jpg",
     "contactMap": "federacion.jpg",
@@ -28,6 +29,7 @@
           "es": "Español",
           "en": "Spanish"
         },
+        "flag": "ar",
         "level": {
           "es": "Nativo",
           "en": "Native"
@@ -38,10 +40,42 @@
           "es": "Inglés",
           "en": "English"
         },
-        "level": {
-          "es": "Lectura avanzada, escritura intermedia-alta y conversación intermedia",
-          "en": "Advanced reading, upper-intermediate writing and intermediate conversation"
-        }
+        "flag": "us",
+        "skills": [
+          {
+            "name": {
+              "es": "Lectura",
+              "en": "Reading"
+            },
+            "level": {
+              "es": "Avanzado",
+              "en": "Advanced"
+            },
+            "value": 85
+          },
+          {
+            "name": {
+              "es": "Escritura",
+              "en": "Writing"
+            },
+            "level": {
+              "es": "Intermedio alto",
+              "en": "Upper intermediate"
+            },
+            "value": 70
+          },
+          {
+            "name": {
+              "es": "Conversación",
+              "en": "Speaking"
+            },
+            "level": {
+              "es": "Intermedio",
+              "en": "Intermediate"
+            },
+            "value": 55
+          }
+        ]
       }
     ]
   },
@@ -63,6 +97,10 @@
       "description": {
         "es": "Gestión y desarrollo de la app mobile y de los servicios backend que soportan el flujo de inversión en los activos financieros de la compañía, incluidos los fondos mutuos. Desarrollo de los sitios web en React orientados al flujo de empresas. Integración de herramientas de inteligencia artificial en el proceso de desarrollo para elevar la calidad y la confiabilidad de cada entrega desde la primera iteración.",
         "en": "Managed and developed the mobile app and the backend services supporting the investment flow across the company's financial assets, including mutual funds. Built the React websites for the corporate client flow. Integrated artificial intelligence tools into the development process to raise the quality and reliability of each delivery from the first iteration."
+      },
+      "summary": {
+        "es": "Desarrollo de la app mobile y de los servicios backend del flujo de inversión en activos financieros y fondos mutuos. Sitios web en React para empresas e integración de IA en el proceso de desarrollo.",
+        "en": "Developed the mobile app and backend services for the investment flow across financial assets and mutual funds. Built React sites for corporate clients and brought AI into the development process."
       },
       "technologies": [
         "Flutter",
@@ -92,6 +130,10 @@
         "es": "Desarrollo de software en una start-up que sincroniza productos entre múltiples canales de venta para ayudar a escalar negocios online. Participación de punta a punta: atención a usuarios, análisis de problemas, desarrollo de nuevas funcionalidades y despliegue en producción. Propuesta de mejoras y optimización de procesos, alineando cada entrega técnica con las necesidades del cliente y del negocio.",
         "en": "Software development at a start-up that syncs products across multiple sales channels to help online businesses scale. End-to-end involvement: user support, problem analysis, development of new features and production deployment. Proposed improvements and optimized processes, aligning each technical delivery with customer and business needs."
       },
+      "summary": {
+        "es": "Desarrollo de punta a punta en una start-up que sincroniza productos entre canales de venta online: nuevas funcionalidades, análisis de problemas, soporte y despliegue en producción.",
+        "en": "End-to-end development at a start-up that syncs products across online sales channels: new features, problem analysis, support and production deployment."
+      },
       "technologies": [
         "PHP",
         "Laravel",
@@ -118,6 +160,10 @@
       "description": {
         "es": "Reducción del 40 % de los errores en producción de la plataforma interna de gestión de impuestos del negocio de retail (1P), mediante buenas prácticas de diseño de software y una mejor arquitectura de la lógica de negocio, lo que facilitó escalar el sistema y rastrear fallos. Desarrollo del motor de reglas que determina el impuesto aplicable en distintos países según el tipo de producto y el lugar de residencia, sobre una arquitectura de microservicios. Relevamiento de requerimientos con usuarios internos, definición de las soluciones y coordinación de integraciones con otros equipos.",
         "en": "Reduced production errors by 40% on the internal tax management platform for the retail (1P) business by applying sound software design practices and a stronger business logic architecture, which made the system easier to scale and failures easier to trace. Developed the rules engine that determines the applicable tax across countries based on product type and place of residence, on a microservices architecture. Gathered requirements from internal users, defined solutions and coordinated integrations with other teams."
+      },
+      "summary": {
+        "es": "Reducción del 40 % de los errores en producción de la plataforma de impuestos del retail (1P). Desarrollo del motor de reglas que determina el impuesto según país, tipo de producto y residencia, sobre microservicios.",
+        "en": "Cut production errors by 40% on the retail (1P) tax platform. Built the rules engine that determines tax by country, product type and residence, on a microservices architecture."
       },
       "technologies": [
         "Java",
@@ -148,6 +194,10 @@
         "es": "Desarrollo .NET en una consultora que presta servicios a Sancor Seguros. Entrega de funcionalidades bajo metodología Scrum, en coordinación constante con equipos de analistas y testers.",
         "en": ".NET development at a consultancy serving Sancor Seguros. Delivered features under Scrum, working in constant coordination with analyst and tester teams."
       },
+      "summary": {
+        "es": "Desarrollo .NET para Sancor Seguros con Scrum, en coordinación con equipos de analistas y testers.",
+        "en": ".NET development for Sancor Seguros under Scrum, working closely with analyst and tester teams."
+      },
       "technologies": [
         ".NET",
         "C#",
@@ -177,6 +227,10 @@
         "es": "Participación en el proceso completo de desarrollo de software con metodologías ágiles, desde el relevamiento de requerimientos con el cliente hasta la entrega y el mantenimiento.",
         "en": "Took part in the complete software development process using agile methodologies, from gathering requirements with the client to delivery and maintenance."
       },
+      "summary": {
+        "es": "Ciclo completo de desarrollo con metodologías ágiles, desde el relevamiento con el cliente hasta la entrega y el mantenimiento.",
+        "en": "Full development cycle with agile methodologies, from gathering requirements with the client to delivery and maintenance."
+      },
       "technologies": [
         "C#",
         "Angular",
@@ -205,6 +259,10 @@
         "es": "Primera experiencia en desarrollo de software empresarial. Desarrollo de proyectos web en modalidad de outsourcing, como parte de un equipo de desarrolladores.",
         "en": "First experience in enterprise software development. Built web projects on an outsourcing basis as part of a development team."
       },
+      "summary": {
+        "es": "Primera experiencia profesional: proyectos web en modalidad de outsourcing dentro de un equipo de desarrollo.",
+        "en": "First professional experience: outsourced web projects as part of a development team."
+      },
       "technologies": [
         "Web APIs",
         "Web Pages",
@@ -226,6 +284,10 @@
       "description": {
         "es": "Desarrollo de proyectos propios y a pedido de empresas. Incorporación a proyectos en curso para implementar mejoras y agilizar sus entregas.",
         "en": "Developed my own projects and projects commissioned by companies. Joined ongoing projects to implement improvements and speed up delivery."
+      },
+      "summary": {
+        "es": "Proyectos propios y a pedido de empresas, sumando mejoras a desarrollos en curso.",
+        "en": "Own projects and work for companies, adding improvements to ongoing developments."
       },
       "technologies": [
         "C++",
@@ -256,6 +318,10 @@
         "es": "App de entrenamiento instalable en el celular que sincroniza actividades de Garmin y Strava, y analiza la carga de cada atleta. Utiliza agentes de IA especializados en running, gimnasio y nutrición para dar recomendaciones personalizadas y optimizar el entrenamiento.",
         "en": "Installable training app that syncs Garmin and Strava activities and analyzes each athlete's training load. It uses AI agents specialized in running, gym training and nutrition to give personalized recommendations and optimize training."
       },
+      "summary": {
+        "es": "App de entrenamiento que sincroniza Garmin y Strava, y usa agentes de IA para recomendar entrenamiento y nutrición.",
+        "en": "Training app that syncs Garmin and Strava and uses AI agents to recommend training and nutrition."
+      },
       "technologies": [
         "Next.js",
         "TypeScript",
@@ -278,6 +344,10 @@
       "description": {
         "es": "Sitio profesional de una licenciada en Nutrición de Federación, Entre Ríos. Desarrollo a medida con animaciones, exportación estática, publicación automática y medición de los contactos por WhatsApp e Instagram.",
         "en": "Professional website for a nutritionist from Federación, Entre Ríos. Custom development with animations, static export, automated deployment and tracking of WhatsApp and Instagram contacts."
+      },
+      "summary": {
+        "es": "Sitio profesional para una licenciada en Nutrición, con animaciones y publicación automática.",
+        "en": "Professional site for a nutritionist, with animations and automated publishing."
       },
       "technologies": [
         "Next.js",
@@ -305,6 +375,10 @@
         "es": "Aplicación web para gestionar los turnos de vacunación contra el COVID-19 del Hospital San José, en Federación, Entre Ríos. Se desarrolló durante la pandemia para evitar aglomeraciones: cada persona cargaba sus datos, recibía su turno y podía obtener el comprobante en PDF.",
         "en": "Web application to manage COVID-19 vaccination appointments for Hospital San José in Federación, Entre Ríos. It was built during the pandemic to avoid crowding: each person entered their details, received an appointment and could get a PDF confirmation."
       },
+      "summary": {
+        "es": "Turnera web para la vacunación contra el COVID-19 del Hospital San José de Federación.",
+        "en": "Web booking app for COVID-19 vaccination at Hospital San José in Federación."
+      },
       "technologies": [
         "React",
         "Firebase",
@@ -325,6 +399,10 @@
       "description": {
         "es": "Proyecto final de Ingeniería en Informática: plataforma para el guiado y la navegación de un vehículo aéreo no tripulado. Incluye una aplicación de escritorio en Python para comunicarse con un cuadricóptero y gestionar su vuelo, con una Raspberry Pi 3 a bordo.",
         "en": "Final project for my Computer Engineering degree: a platform for guiding and navigating an unmanned aerial vehicle. It includes a Python desktop application to communicate with a quadcopter and manage its flight, with a Raspberry Pi 3 on board."
+      },
+      "summary": {
+        "es": "Tesis de grado: guiado y navegación de un cuadricóptero desde una app de escritorio en Python.",
+        "en": "Degree thesis: guidance and navigation of a quadcopter from a Python desktop app."
       },
       "technologies": [
         "Python",
@@ -348,6 +426,10 @@
       "description": {
         "es": "Auto a control remoto construido sobre una placa Arduino UNO y manejado por Bluetooth desde una aplicación Android propia.",
         "en": "Remote-controlled car built on an Arduino UNO board and driven over Bluetooth from my own Android application."
+      },
+      "summary": {
+        "es": "Auto a control remoto con Arduino, manejado desde una app Android propia.",
+        "en": "Remote-control car built on Arduino, driven from a custom Android app."
       },
       "technologies": [
         "Java",
@@ -376,6 +458,7 @@
         "es": "Universidad Nacional del Litoral, Santa Fe - Argentina"
       },
       "period": "2010 - 2018",
+      "showInPdf": true,
       "image": "logos/UNL_logo.png",
       "description": {
         "es": "Carrera orientada a la ciencia de datos.",
@@ -397,6 +480,7 @@
         "es": "Universidad Nacional del Litoral, Santa Fe - Argentina"
       },
       "period": "2010 - 2015",
+      "showInPdf": false,
       "image": "logos/UNL_logo.png",
       "description": {
         "es": "Título intermedio de la carrera de ingeniería en informática.",
@@ -418,6 +502,7 @@
         "es": "E.E.M. N°4 Domingo Faustino Sarmiento, Federación, Entre Ríos - Argentina"
       },
       "period": "2003 - 2008",
+      "showInPdf": false,
       "image": "logos/arg_logo.svg",
       "description": {
         "es": "Secundario completo.",
@@ -439,6 +524,7 @@
         "es": "Universidad Tecnológica Nacional (UTN) - San Francisco"
       },
       "period": "2021",
+      "showInPdf": true,
       "image": "logos/UTN_logo.jpg",
       "description": {
         "es": "Curso a distancia.",
@@ -460,6 +546,7 @@
         "es": "Latin American Council for Cybersecurity and Computer Forensic (IACCFC)"
       },
       "period": "2020",
+      "showInPdf": true,
       "image": "logos/HACKING_logo.png",
       "description": {
         "es": "Certificado otorgado por IACCFC.",
@@ -481,6 +568,7 @@
         "es": "Instituto Argentino de Computación (IAC)"
       },
       "period": "2007",
+      "showInPdf": false,
       "image": "logos/IAC_loco.png",
       "description": {
         "es": "Optimización de recursos, seguridad, cámaras, etc.",
@@ -502,6 +590,7 @@
         "es": "English Academy, Federación, Entre Ríos"
       },
       "period": "2005 - 2007",
+      "showInPdf": false,
       "image": "logos/ENGLISH_logo.png",
       "description": {
         "es": "Cumplidos dos años de curso completo.",
@@ -523,6 +612,7 @@
         "es": "Universidad Nacional del Litoral, Santa Fe - Argentina"
       },
       "period": "2017",
+      "showInPdf": true,
       "image": "logos/UNL_logo.png",
       "description": {
         "es": "Materia optativa para desarrollo de apps móviles con Android Studio.",

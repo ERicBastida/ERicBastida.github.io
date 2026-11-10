@@ -1,8 +1,7 @@
 import { motion } from 'motion/react'
-import { FileDown, Mail } from 'lucide-react'
+import { Mail } from 'lucide-react'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import { asset, cv, resumePdf, type Lang } from '../lib/cv'
-import { t } from '../lib/i18n'
+import { asset, cv, type Lang } from '../lib/cv'
 import { Preferences } from './Preferences'
 
 const { personal } = cv
@@ -65,9 +64,6 @@ export function Portrait({ lang, onLang }: PortraitProps) {
           </a>
           <a href={`mailto:${personal.email}`} aria-label={personal.email}>
             <Mail size={20} aria-hidden="true" />
-          </a>
-          <a href={resumePdf(lang)} download aria-label={t(lang).downloadCv} title={t(lang).downloadCv}>
-            <FileDown size={20} aria-hidden="true" />
           </a>
         </div>
       </div>

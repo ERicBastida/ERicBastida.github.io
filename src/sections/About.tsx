@@ -4,6 +4,7 @@ import { cv, type Lang } from '../lib/cv'
 import { summarizeTech, totalYears } from '../lib/experience'
 import { formatYears, t } from '../lib/i18n'
 import { techIcon } from '../lib/techIcons'
+import { Flag } from '../components/Flag'
 
 const { personal, experiences } = cv
 
@@ -89,10 +90,32 @@ export function About({ lang, onSelectTech }: AboutProps) {
 
       <h2 className="section-subtitle">{copy.languages}</h2>
       <ul className="languages">
-        {personal.languages.map(({ name, level }) => (
+        {personal.languages.map(({ name, flag, level, skills }) => (
           <li key={name.en}>
-            <strong>{name[lang]}</strong>
-            <span>{level[lang]}</span>
+            <span className="language-name">
+              <Flag code={flag} className="language-flag" />
+              <strong>{name[lang]}</strong>
+              {level && <span className="language-native">{level[lang]}</span>}
+            </span>
+            {skills && (
+              <ul className="language-skills">
+                {skills.map((skill) => (
+                  <li key={skill.name.en}>
+                    <span>{skill.name[lang]}</span>
+                    <span className="language-track" aria-hidden="true">
+                      <motion.span
+                        className="language-bar"
+                        initial={{ scaleX: 0 }}
+                        whileInView={{ scaleX: skill.value / 100 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                      />
+                    </span>
+                    <span className="language-level">{skill.level[lang]}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
         ))}
       </ul>
