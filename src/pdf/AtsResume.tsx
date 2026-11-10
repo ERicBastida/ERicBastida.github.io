@@ -1,7 +1,7 @@
 import { cv, type Lang } from '../lib/cv'
 import { t } from '../lib/i18n'
 import { formatPeriod, summarizeTech, totalYears } from '../lib/experience'
-import { SKILL_GROUPS } from './skills'
+import { SKILL_DETAILS, SKILL_GROUPS } from './skills'
 
 const { personal } = cv
 
@@ -36,7 +36,10 @@ const sentences = (text: string) =>
 export function AtsResume({ lang }: { lang: Lang }) {
   const copy = t(lang)
   const text = TEXT[lang]
-  const techName = (name: string) => (name === 'AI' ? text.ai : name)
+  const techName = (name: string) => {
+    const label = name === 'AI' ? text.ai : name
+    return SKILL_DETAILS[name] ? `${label} (${SKILL_DETAILS[name]})` : label
+  }
 
   // Dentro de cada categoría, primero lo que más años se usó
   const usage = new Map(summarizeTech(cv.experiences).map(({ name, years }) => [name, years]))

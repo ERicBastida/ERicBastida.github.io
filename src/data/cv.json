@@ -95,12 +95,12 @@
         "en": "Brokerage and investment funds"
       },
       "description": {
-        "es": "Gestión y desarrollo de la app mobile y de los servicios backend que soportan el flujo de inversión en los activos financieros de la compañía, incluidos los fondos mutuos. Desarrollo de los sitios web en React orientados al flujo de empresas. Integración de herramientas de inteligencia artificial en el proceso de desarrollo para elevar la calidad y la confiabilidad de cada entrega desde la primera iteración.",
-        "en": "Managed and developed the mobile app and the backend services supporting the investment flow across the company's financial assets, including mutual funds. Built the React websites for the corporate client flow. Integrated artificial intelligence tools into the development process to raise the quality and reliability of each delivery from the first iteration."
+        "es": "Desarrollo de la microapp de Casa de Bolsa y Fondos Mutuos dentro de la app de ueno bank, banco digital de Paraguay con más de 3 millones de usuarios. Mejoras en los flujos de inversión en fondos mutuos y plazos fijos: consulta de tenencia, reglas de negocio según el tipo de usuario, suscripción y rescate. Implementación de esos flujos en el canal web para empresas con React, adaptados a sus particularidades. Trabajo de punta a punta en mobile (Flutter), frontend (React) y backend (Go), dentro de un equipo de 15 personas. Adopción de Cursor y Spec-Driven Development (GitHub Spec Kit) para acelerar el desarrollo y mejorar la calidad de cada entrega.",
+        "en": "Developed the Brokerage and Mutual Funds micro-app inside the ueno bank app, a Paraguayan digital bank with more than 3 million users. Improved the investment flows for mutual funds and fixed-term deposits: holdings, business rules by user type, subscriptions and redemptions. Brought those flows to the web channel for business clients with React, adapted to their specific needs. Worked end to end across mobile (Flutter), frontend (React) and backend (Go), in a team of 15 people. Adopted Cursor and Spec-Driven Development (GitHub Spec Kit) to speed up development and raise the quality of each delivery."
       },
       "summary": {
-        "es": "Desarrollo de la app mobile y de los servicios backend del flujo de inversión en activos financieros y fondos mutuos. Sitios web en React para empresas e integración de IA en el proceso de desarrollo.",
-        "en": "Developed the mobile app and backend services for the investment flow across financial assets and mutual funds. Built React sites for corporate clients and brought AI into the development process."
+        "es": "Microapp de inversiones dentro de ueno bank (más de 3 millones de usuarios): fondos mutuos y plazos fijos en mobile, web para empresas y backend. Desarrollo con Cursor y Spec-Driven Development.",
+        "en": "Investment micro-app inside ueno bank (3M+ users): mutual funds and fixed-term deposits across mobile, business web and backend. Built with Cursor and Spec-Driven Development."
       },
       "technologies": [
         "Flutter",
@@ -127,12 +127,12 @@
       },
       "companySize": "11-50",
       "description": {
-        "es": "Desarrollo de software en una start-up que sincroniza productos entre múltiples canales de venta para ayudar a escalar negocios online. Participación de punta a punta: atención a usuarios, análisis de problemas, desarrollo de nuevas funcionalidades y despliegue en producción. Propuesta de mejoras y optimización de procesos, alineando cada entrega técnica con las necesidades del cliente y del negocio.",
-        "en": "Software development at a start-up that syncs products across multiple sales channels to help online businesses scale. End-to-end involvement: user support, problem analysis, development of new features and production deployment. Proposed improvements and optimized processes, aligning each technical delivery with customer and business needs."
+        "es": "Desarrollo de la plataforma que sincroniza los productos de más de 1000 sellers, con catálogos de 20 a 5000 productos, en más de 30 canales de venta y gestión: Mercado Libre, Amazon, Falabella, Shopify, Tiendanube, WooCommerce y ERPs como NetSuite, Siigo y Alegra, entre otros. Estabilización de los procesos programados de integración que se bloqueaban por la falla de un solo producto o por falta de memoria al conciliar catálogos grandes. Optimización de recursos en AWS con mejoras de concurrencia, menos consultas a la base de datos y caché con ElastiCache. Trabajo de punta a punta en un equipo de 4 desarrolladores y un líder: atención a usuarios, análisis, desarrollo y despliegue en producción.",
+        "en": "Developed the platform that syncs the products of more than 1,000 sellers, with catalogs of 20 to 5,000 products, across more than 30 sales and management channels: Mercado Libre, Amazon, Falabella, Shopify, Tiendanube, WooCommerce and ERPs such as NetSuite, Siigo and Alegra, among others. Stabilized scheduled integration jobs that stalled when a single product failed or when memory ran out reconciling large catalogs. Optimized AWS resources through concurrency improvements, fewer database queries and caching with ElastiCache. Worked end to end in a team of 4 developers and a lead: user support, analysis, development and production deployment."
       },
       "summary": {
-        "es": "Desarrollo de punta a punta en una start-up que sincroniza productos entre canales de venta online: nuevas funcionalidades, análisis de problemas, soporte y despliegue en producción.",
-        "en": "End-to-end development at a start-up that syncs products across online sales channels: new features, problem analysis, support and production deployment."
+        "es": "Sincronización de productos de más de 1000 sellers en más de 30 canales (Mercado Libre, Amazon, Shopify, ERPs). Estabilización de integraciones, optimización de recursos en AWS.",
+        "en": "Product sync for 1,000+ sellers across 30+ channels (Mercado Libre, Amazon, Shopify, ERPs). Stabilized integrations and optimized AWS resources."
       },
       "technologies": [
         "PHP",

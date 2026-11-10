@@ -27,3 +27,8 @@ export const SKILL_GROUPS: { name: Localized; items: string[] }[] = [
     items: ['AI', 'Claude API', 'MCP'],
   },
 ]
+
+// Detalle que el ATS agrega entre paréntesis, para que también encuentre cada servicio
+export const SKILL_DETAILS: Record<string, string> = {
+  AWS: 'EC2, S3, SQS, RDS, ElastiCache, Secrets Manager, CodePipeline',
+}
