@@ -12,13 +12,13 @@ const STACK_SIZE = 10
 const TAGS = 6
 const PDF_TEXT = {
   es: {
-    years: (years: number) => `${years} años de experiencia`,
+    years: (years: number) => `${years} ${years === 1 ? 'año' : 'años'} de experiencia`,
     education: 'Formación',
     qrTitle: 'Versión actualizada',
     qrHint: 'Escaneá el código para ver mi CV siempre al día.',
   },
   en: {
-    years: (years: number) => `${years} years of experience`,
+    years: (years: number) => `${years} ${years === 1 ? 'year' : 'years'} of experience`,
     education: 'Education',
     qrTitle: 'Latest version',
     qrHint: 'Scan the code to see my always up-to-date CV.',
@@ -205,7 +205,7 @@ export function Resume({ lang }: { lang: Lang }) {
               <li key={name}>
                 <span>{name}</span>
                 <span className="r-bar-value">
-                  {formatTechYears.format(techYears)} {copy.yearsShort}
+                  {formatTechYears.format(techYears)} {copy.yearsShort(techYears)}
                 </span>
                 <span className="r-track">
                   <span className="r-bar" style={{ width: `${(techYears / maxYears) * 100}%` }} />

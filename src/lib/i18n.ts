@@ -7,6 +7,9 @@ type RecruiterPart =
   | { text: string; optional?: true }
   | { field: RecruiterField; label: string; placeholder: string }
 
+// Singular solo si, redondeado como se muestra, da exactamente 1
+const isOne = (years: number) => Math.round(years * 10) / 10 === 1
+
 const strings = {
   es: {
     nav: { about: 'Sobre mí', experience: 'Experiencia', projects: 'Proyectos', studies: 'Estudios', contact: 'Contacto' },
@@ -21,10 +24,10 @@ const strings = {
     languages: 'Idiomas',
     stack: 'Mi stack',
     stackHint: 'Elegí una tecnología para ver dónde la usé.',
-    yearsApprox: (years: number) => `Aprox. ${years} años`,
-    yearsLabel: 'años de experiencia',
-    yearsUnit: 'años',
-    yearsShort: 'años',
+    yearsApprox: (years: number) => `Aprox. ${years} ${isOne(years) ? 'año' : 'años'}`,
+    yearsLabel: (years: number) => `${isOne(years) ? 'año' : 'años'} de experiencia`,
+    yearsUnit: (years: number): string => (isOne(years) ? 'año' : 'años'),
+    yearsShort: (years: number): string => (isOne(years) ? 'año' : 'años'),
     present: 'Presente',
     filter: 'Filtrar por tecnología',
     showAll: (count: number) => `Ver todas (${count})`,
@@ -40,8 +43,12 @@ const strings = {
     copyMessage: 'Copiar mensaje',
     copied: 'Copiado',
     openMail: 'Enviar correo',
-    downloadCv: 'Descargar CV en PDF',
-    downloadPdf: 'Descargar PDF',
+    downloadCv: 'Descargar CV',
+    downloadIntro: 'Elegí el formato según a dónde va.',
+    resumes: {
+      visual: { title: 'Diseño visual', hint: 'Para mandar a una persona' },
+      ats: { title: 'Versión ATS', hint: 'Texto simple para portales de empleo' },
+    },
     mailSubject: (role: string, company: string) => `Búsqueda de ${role} en ${company}`,
     recruiterMessage: [
       { text: 'Hola Eric! Soy ' },
@@ -72,10 +79,10 @@ const strings = {
     languages: 'Languages',
     stack: 'My stack',
     stackHint: 'Pick a technology to see where I used it.',
-    yearsApprox: (years: number) => `About ${years} years`,
-    yearsLabel: 'years of experience',
-    yearsUnit: 'years',
-    yearsShort: 'yrs',
+    yearsApprox: (years: number) => `About ${years} ${isOne(years) ? 'year' : 'years'}`,
+    yearsLabel: (years: number) => `${isOne(years) ? 'year' : 'years'} of experience`,
+    yearsUnit: (years: number): string => (isOne(years) ? 'year' : 'years'),
+    yearsShort: (years: number): string => (isOne(years) ? 'yr' : 'yrs'),
     present: 'Present',
     filter: 'Filter by technology',
     showAll: (count: number) => `Show all (${count})`,
@@ -91,8 +98,12 @@ const strings = {
     copyMessage: 'Copy message',
     copied: 'Copied',
     openMail: 'Send email',
-    downloadCv: 'Download CV as PDF',
-    downloadPdf: 'Download PDF',
+    downloadCv: 'Download CV',
+    downloadIntro: 'Pick the format for where it is going.',
+    resumes: {
+      visual: { title: 'Visual design', hint: 'To send to a person' },
+      ats: { title: 'ATS version', hint: 'Plain text for job portals' },
+    },
     mailSubject: (role: string, company: string) => `${role} opening at ${company}`,
     recruiterMessage: [
       { text: 'Hi Eric! I am ' },

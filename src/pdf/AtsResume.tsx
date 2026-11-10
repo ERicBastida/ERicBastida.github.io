@@ -12,7 +12,7 @@ const TEXT = {
     education: 'Formación',
     tech: 'Tecnologías',
     ai: 'IA aplicada al desarrollo',
-    years: (years: number) => `${years} años de experiencia`,
+    years: (years: number) => `${years} ${years === 1 ? 'año' : 'años'} de experiencia`,
   },
   en: {
     summary: 'Summary',
@@ -20,7 +20,7 @@ const TEXT = {
     education: 'Education',
     tech: 'Technologies',
     ai: 'AI-assisted development',
-    years: (years: number) => `${years} years of experience`,
+    years: (years: number) => `${years} ${years === 1 ? 'year' : 'years'} of experience`,
   },
 }
 

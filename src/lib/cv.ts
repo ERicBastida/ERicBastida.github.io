@@ -76,4 +76,7 @@ export const cv = rawCv as Cv
 export const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`
 
 // Los genera npm run pdf
-export const resumePdf = (lang: Lang) => asset(`cv-eric-bastida-${lang}.pdf`)
+// El visual es para personas; el ATS, de una columna, para los portales que filtran CVs
+export type ResumeKind = 'visual' | 'ats'
+export const resumePdf = (lang: Lang, kind: ResumeKind = 'visual') =>
+  asset(`cv-eric-bastida-${kind === 'ats' ? 'ats-' : ''}${lang}.pdf`)

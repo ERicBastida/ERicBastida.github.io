@@ -1,6 +1,7 @@
 import { useEffect, useState, type FormEvent } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
-import { Check, Copy, FileDown, Mail, MapPin } from 'lucide-react'
+import { Check, Copy, Download, Mail, MapPin } from 'lucide-react'
+import { RESUME_KINDS } from '../components/DownloadMenu'
 import { asset, cv, resumePdf, type Lang } from '../lib/cv'
 import { t, type RecruiterField } from '../lib/i18n'
 
@@ -126,10 +127,6 @@ export function Contact({ lang }: { lang: Lang }) {
             onClick={() => copyText(personal.email, 'email')}
           />
         </div>
-        <a className="link-button" href={resumePdf(lang)} download>
-          <FileDown size={16} aria-hidden="true" />
-          {copy.downloadCv}
-        </a>
 
         <div
           className="contact-map"
@@ -155,6 +152,27 @@ export function Contact({ lang }: { lang: Lang }) {
           </a>
         </div>
         <p className="hint">{personal.location}</p>
+
+        <div className="resume-downloads">
+          <h2 className="section-subtitle">{copy.downloadCv}</h2>
+          <p className="hint">{copy.downloadIntro}</p>
+          <ul className="resume-options">
+            {RESUME_KINDS.map(({ kind, icon: Icon }) => (
+              <li key={kind}>
+                <a className="resume-option" href={resumePdf(lang, kind)} download>
+                  <span className="resume-option-icon">
+                    <Icon size={22} strokeWidth={1.75} aria-hidden="true" />
+                  </span>
+                  <span className="resume-option-text">
+                    <strong>{copy.resumes[kind].title}</strong>
+                    <span>{copy.resumes[kind].hint}</span>
+                  </span>
+                  <Download className="resume-option-arrow" size={18} aria-hidden="true" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </>
   )

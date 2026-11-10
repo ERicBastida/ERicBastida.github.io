@@ -54,7 +54,7 @@ export function About({ lang, onSelectTech }: AboutProps) {
       <ul className="stack">
         {tech.map(({ name, years }) => {
           const { icon: Icon, color } = techIcon(name)
-          const yearsText = `${formatYears(years, lang)} ${copy.yearsUnit}`
+          const yearsText = `${formatYears(years, lang)} ${copy.yearsUnit(years)}`
           const size = Math.round(20 + (years / maxYears) * 30)
           return (
             <li key={name}>

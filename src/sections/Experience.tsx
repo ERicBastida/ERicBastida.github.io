@@ -57,6 +57,7 @@ export function ExperienceSection({ lang, selected, onChange }: ExperienceSectio
     ? tech
     : tech.filter((item, index) => index < VISIBLE_TECH || selected.includes(item.name))
   const singleTech = selected.length === 1 ? selected[0] : null
+  const shownYears = singleTech ? techYears(experiences, singleTech) : totalYears(experiences)
 
   return (
     <>
@@ -64,13 +65,10 @@ export function ExperienceSection({ lang, selected, onChange }: ExperienceSectio
 
       <p className="years">
         <span className="years-number">
-          <CountUp
-            value={singleTech ? techYears(experiences, singleTech) : totalYears(experiences)}
-            lang={lang}
-          />
+          <CountUp value={shownYears} lang={lang} />
         </span>
         <span className="years-label">
-          {copy.yearsLabel}
+          {copy.yearsLabel(shownYears)}
           {singleTech ? ` ${lang === 'es' ? 'con' : 'with'} ${singleTech}` : ''}
         </span>
       </p>
@@ -88,7 +86,7 @@ export function ExperienceSection({ lang, selected, onChange }: ExperienceSectio
               >
                 {name}
                 <span className="chip-years">
-                  {formatYears(years, lang)} {copy.yearsShort}
+                  {formatYears(years, lang)} {copy.yearsShort(years)}
                 </span>
               </button>
             </motion.li>
